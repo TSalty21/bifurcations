@@ -110,8 +110,8 @@ if __name__ == "__main__":
     # logistic = Logistic(r, x0, last_num=200)
     # logistic.plot_bifurcation_diagram(iterations)
 
-    alpha = np.linspace(3, 12, n)
-    beta = np.linspace(-1, 1, n)
+    alpha = np.linspace(3.0, 12.0, n)
+    beta = np.linspace(-1.0, 1.0, n)
     x0 = 1e-5 * np.ones([n, n])
     gauss = Gauss(alpha, beta, x0)
     gauss.plot_bifurcation_diagram(iterations)
